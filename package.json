@@ -8,8 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint ./**/*.{ts,tsx,css,yml,yaml} --fix && pnpm run fmt",
-    "fmt": "prettier -w -u ./**/*",
+    "lint:fix": "eslint ./app/*.{ts,tsx,css,yml,yaml} --fix && pnpm run fmt",
+    "fmt": "prettier -w -u ./app/*",
+    "check": "prettier -c ./app/*",
     "type": "tsc --noEmit",
     "prepare": "husky install"
   },
