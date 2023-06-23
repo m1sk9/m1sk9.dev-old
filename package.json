@@ -7,7 +7,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint ./**/*.{ts,tsx,css,yml,yaml} --fix && pnpm run fmt",
+    "fmt": "prettier -w -u ./**/*",
+    "type": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.4.7",
@@ -21,6 +25,7 @@
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "typescript": "5.1.3"
   }
