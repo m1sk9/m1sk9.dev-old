@@ -32,12 +32,10 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.2
-        env:
-          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
         with:
           version: ${{ env.pnpm-version }}
-          run_install: |
-            - recursive: true
+
+      - run: pnpm i --frozen-lockfile
 
       - name: eslint
         run: pnpm run lint
