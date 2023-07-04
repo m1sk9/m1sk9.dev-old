@@ -1,5 +1,7 @@
 import { Metadata } from "next";
-import pkg from "package.json" assert { type: "json" };
+
+// eslint-disable-next-line sort-imports
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
