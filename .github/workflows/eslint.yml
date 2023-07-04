@@ -1,8 +1,10 @@
 name: eslint
-# cf. https://github.com/re-taro/re-taro.dev/blob/main/.github/workflows/eslint.yml
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -43,5 +45,5 @@ jobs:
       - name: Install dependencies
         run: pnpm i --no-frozen-lockfile
 
-      - name: eslint
+      - name: Run eslint lilis.dev
         run: pnpm run lint

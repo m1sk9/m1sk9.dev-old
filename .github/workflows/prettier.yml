@@ -1,8 +1,10 @@
 name: prettier
-# cf. https://github.com/re-taro/re-taro.dev/blob/main/.github/workflows/prettier.yml
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -43,5 +45,5 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      - name: Check the code
+      - name: Prettier check lilis.dev
         run: pnpm run check
