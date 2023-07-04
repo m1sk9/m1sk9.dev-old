@@ -12,11 +12,6 @@ export const metadata: Metadata = {
   generator: "Next.js",
   applicationName: "Next.js",
   authors: [{ name: "lis2a" }],
-  twitter: {
-    title: "lilis.dev",
-    description: "lis's portfolio",
-    site: "@lis2a_o0",
-  },
 };
 
 export default function RootLayout({
@@ -26,6 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes={"any"} />
+      </head>
       <body>{children}</body>
     </html>
   );
