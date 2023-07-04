@@ -17,7 +17,11 @@ const Header = () => {
       <p className={"text-2xl mt-2"}>liliscats</p>
 
       <Stack className={"text-1xs mt-3"} direction={"row"} spacing={12}>
-        <LinkButton icon={<FaGithub />} domain={"github.com"} id={"lis2a"} />
+        <LinkButton
+          icon={<FaGithub />}
+          domain={"github.com"}
+          id={"liliscats"}
+        />
         <LinkButton
           icon={<FaTwitter />}
           domain={"twitter.com"}
