@@ -1,8 +1,10 @@
 name: prettier
-# cf. https://github.com/re-taro/re-taro.dev/blob/main/.github/workflows/prettier.yml
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -41,19 +43,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm i --no-frozen-lockfile
+        run: pnpm i --frozen-lockfile
 
-      - name: Format the code
-        run: pnpm run fmt
-      - name: auto commit
-        run: |
-          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if (git diff --shortstat | grep '[0-9]'); then \
-            git add .; \
-            git commit -m "🤖 auto-fixable format by github-actions"; \
-            git push origin HEAD:${GITHUB_REF}; \
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Prettier check lilis.dev
+        run: pnpm run check
