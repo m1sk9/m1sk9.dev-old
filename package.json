@@ -2,10 +2,10 @@
   "name": "lilis.dev",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@8.6.1",
-  "repository": "https://github.com/lis2a/lilis.dev.git",
+  "packageManager": "pnpm@8.6.6",
+  "repository": "https://github.com/liliscats/lilis.dev.git",
   "author": {
-    "name": "lis2a",
+    "name": "liliscats",
     "email": "me@lilis.dev"
   },
   "scripts": {
