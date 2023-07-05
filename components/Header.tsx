@@ -25,7 +25,7 @@ const Header = () => {
         <LinkButton
           icon={<FaTwitter />}
           domain={"twitter.com"}
-          id={"liliscats"}
+          id={"liliscats2"}
         />
         <LinkButton icon={<FaKeybase />} domain={"keybase.io"} id={"lis2a"} />
       </Stack>
