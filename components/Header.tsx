@@ -12,7 +12,7 @@ const Header = () => {
         "max-w-10 flex flex-col items-center justify-center pb-20 pt-8"
       }
     >
-      <Image src={"/icon.png"} alt={"m1sk9のアイコン"} width={200} height={200} />
+      <Image src={"https://github.com/m1sk9.png"} alt={"m1sk9のアイコン"} width={200} height={200} />
       <p className={"mt-5 text-4xl font-bold"}>める</p>
       <p className={"mt-2 text-2xl"}>m1sk9</p>
 
