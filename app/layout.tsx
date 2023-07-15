@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     template: "%s - lilis.dev",
     default: "lilis.dev",
   },
-  description: "lis's portfolio",
+  description: "m1sk9's portfolio",
   generator: "Next.js",
   applicationName: "Next.js",
-  authors: [{ name: "lis2a" }],
+  authors: [{ name: "m1sk9" }],
 };
 
 export default function RootLayout({

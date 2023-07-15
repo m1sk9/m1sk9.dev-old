@@ -1,11 +1,11 @@
 {
-  "name": "lilis.dev",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@8.6.6",
-  "repository": "https://github.com/liliscats/lilis.dev.git",
+  "repository": "https://github.com/m1sk9/portfolio.git",
   "author": {
-    "name": "liliscats",
+    "name": "m1sk9",
     "email": "me@lilis.dev"
   },
   "scripts": {
