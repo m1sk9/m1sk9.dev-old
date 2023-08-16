@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - lilis.dev",
-    default: "lilis.dev",
+    template: "%s - m1sk9.dev",
+    default: "m1sk9.dev",
   },
   description: "m1sk9's portfolio",
   generator: "Next.js",
