@@ -5,7 +5,7 @@ import MoeCounter from "../components/MoeCounter";
 
 export default function Page() {
   return (
-    <body className={"dark:bg-gray-800 dark:text-white"}>
+    <body className={"dark:bg-black dark:text-white"}>
       <Header />
       <MoeCounter />
     </body>
